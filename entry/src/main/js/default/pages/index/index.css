@@ -1,0 +1,15 @@
+
+.container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.add_video {
+    font-size: 30px;
+    text-color: white;
+    text-align: center;
+    background-color: transparent;
+}
+
+

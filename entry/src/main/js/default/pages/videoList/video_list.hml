@@ -1,0 +1,21 @@
+<div class="container">
+    <list id="listView" @scroll="onScroll" @scrolltouchup="onScrolltouchup" @scrollend="onScrollend"
+            @scrolltop="onScrolltop" @scrollbottom="onScrollbottom" @touchstart="Touchstart" @touchend="Touchend">
+        <list-item class="listItem" id="listItem" for="{{array}}">
+            <text>
+                {{$item.name}}
+            </text>
+            <video class="videoStyle" id="{{$idx}}" src="{{$item.url}}" @prepared="onPrepared" @error="onError"
+                    @start="onStart" @pause="onPause" @finish="onFinish"></video>
+        </list-item>
+    </list>
+    <dialog id="dialogView" class="dialog_style">
+            <list >
+                <list-item class="listItem" onclick="showChoose({{$item}})" for="{{deviceArray}}">
+                    <text class="title">{{$item}}
+                    </text>
+                </list-item>
+            </list>
+    </dialog>
+</div>
+

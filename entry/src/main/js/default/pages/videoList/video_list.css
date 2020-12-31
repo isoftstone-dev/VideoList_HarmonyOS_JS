@@ -1,0 +1,25 @@
+.container {
+    flex-direction: column;
+}
+.listItem {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.title {
+    font-size: 30px;
+}
+.videoStyle {
+    height: 400px;
+}
+.dialog_style {
+    width: 100%;
+    height: 50%;
+}
+.title_div {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    background-color: darkcyan;
+}

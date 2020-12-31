@@ -1,0 +1,8 @@
+<element name="videoList" src="../videoList/video_list.hml"></element>
+<div class="container">
+    <!--按钮点击添加视频数据源-->
+
+    <button class="add_video" type="capsule" value="增加数据" onclick="Click"></button>
+    <!--引入视频组件  array-object属性为自定义属性,值array是视频数据源数组  属性名字不能变动   -->
+    <videoList array-object="{{array}}"> </videoList>
+</div>
